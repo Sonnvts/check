@@ -1,0 +1,30 @@
+data:
+  path: "data/your_dataset.csv"
+  target: "target_column"
+  task: "regression"
+  time_column: null
+  id_columns: []
+  test_size: 0.2
+  val_size: 0.1
+  random_state: 42
+
+features:
+  enable_feature_engineering: true
+  polynomial_degree: 2
+  max_features: null
+  selection_method: "mutual_info"
+
+training:
+  time_series: false
+  enable_tuning: true
+  n_iter: 20
+  cv_folds: 5
+  scoring: null
+  use_shap: true
+  use_lime: true
+  use_pdp: true
+  enable_deep_learning: false
+
+output:
+  output_dir: "outputs"
+  experiment_name: "default_run"
